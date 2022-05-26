@@ -1,0 +1,19 @@
+<html>
+    <body>
+        In the above program, before printing inserted arrays, check if it has duplicate entries, insert them in separate array and print unique item of arrays
+        <script>
+            let array1 = [1, 1, 1];
+            let array2 = [2, 2, 2];
+            let array3 = [3, 3, 3];
+            let mainArray = [];
+
+            mainArray.push(array1, array2, array3);                    
+            mainArray.forEach(element => {
+                console.log(element);
+            })
+
+            let mergedUnique = [...new Set([...array1 ,...array2, ...array3])]; 
+            console.log(mergedUnique);
+        </script>
+    </body>
+</html>

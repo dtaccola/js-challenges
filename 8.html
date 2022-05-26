@@ -1,0 +1,18 @@
+<html>
+    <body>
+        Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity)
+        <br>
+        <hr>
+        <script>
+            var birds = ["parrot", "macaw", "Parrot", "eagle", "eagle", "Hawk", "Eagle"];
+            var res = [];
+
+            birds.forEach(function(i){
+                if(!(res.includes(i) || res.includes(i.toLowerCase())))
+                res.push(i)
+            });
+
+            console.log(res);
+        </script>
+    </body>
+</html>

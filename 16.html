@@ -1,0 +1,20 @@
+<html>
+    <body>
+        Create object with your profile details and print values using 3 different ways
+        <br>
+        <hr>
+        <script>
+            const myself = {
+                firstName: "Daniel",
+                lastName: "Taccola",                
+                age: 36
+            }
+            const array = Object.values(myself);
+            let string = JSON.stringify(myself);
+            
+            console.log("Object way: ", myself);
+            console.log("Array way: ", array);
+            console.log("String way: ", string);
+        </script>
+    </body>
+</html>

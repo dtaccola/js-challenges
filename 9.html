@@ -1,0 +1,18 @@
+<html>
+    <body>
+        Write a JavaScript function to merge two arrays and removes all duplicates elements
+        <br>
+        <hr>
+        <script>
+            var array1 = [1, 1, 2, 2, 3];
+            var array2 = [1, 4, 4, 5, 5];
+            var mergedUnique = [...new Set([...array1 ,...array2])]; 
+
+
+            document.write("Array 1: " + array1 + `<br>`);
+            document.write("Array 2: " + array2 + `<br>`);
+            document.write("Merged and unique: " + mergedUnique);
+            
+        </script>
+    </body>
+</html>

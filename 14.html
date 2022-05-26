@@ -1,0 +1,21 @@
+<html>
+    <body>
+        Write a program that inserts multiple arrays (array1, array2, array3) into main array (mainArray), then loop mainArray and print each inserted array
+        <br>
+        <hr>
+        <script>
+            let array1 = [1, 1, 1];
+            let array2 = [2, 2, 2];
+            let array3 = [3, 3, 3];
+            let mainArray = [];
+
+            mainArray.push(array1, array2, array3);
+            console.log(mainArray);
+        
+            mainArray.forEach(element => {
+                console.log(element);
+            })
+
+        </script>
+    </body>
+</html>

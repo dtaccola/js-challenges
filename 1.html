@@ -1,0 +1,18 @@
+<html>    
+    <body>
+        Display the current day and time in the following format: Today is Tuesday and Current time is 10 PM:30:38
+        <br>
+        <hr>
+        <script>
+            let today = new Date();
+            let hours = today.getHours();
+            let minutes = today.getMinutes();
+            let seconds = today.getSeconds()
+            let weekDay = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+            let period = hours >= 12 ? 'PM' : 'AM'; 
+
+            document.write('Today is ' + weekDay[today.getDay()] + ' and Current time is ' + hours + ' ' + period + ':' + minutes + ':' + seconds);            
+            
+        </script>
+    </body>
+</html>

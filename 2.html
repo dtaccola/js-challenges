@@ -1,0 +1,21 @@
+<html>    
+    <body>
+        Create a new string from a given string changing the position of first and last characters. The string length must be greater than or equal to 1
+        <br>
+        <hr>
+        <div id="given-string">String</div>
+        <br>
+        <script>
+
+            let givenString = document.getElementById('given-string').innerHTML;            
+            
+            function changeLetters(givenString) {                
+                let midLetters = givenString.substring(1, givenString.length - 1);                
+                return (givenString.charAt(givenString.length - 1)) + midLetters + givenString.charAt(0);
+            }
+            
+            document.write(changeLetters(givenString));
+
+        </script>
+    </body>
+</html>

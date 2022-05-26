@@ -1,0 +1,23 @@
+<html>
+    <body>
+        Write a JavaScript program to search a date within a string using regular expression
+        <br>
+        <hr>
+        <script>
+            function searchDate(string){
+                regExp = /\d{2}[-.\/]\d{2}(?:[-.\/]\d{2}(\d{2})?)?/;
+        
+                if (regExp.test(string)){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+
+            console.log(searchDate("I was born at 06/02/1986"));
+
+
+        </script>
+    </body>
+</html>

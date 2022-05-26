@@ -1,0 +1,20 @@
+<html>
+    <body>
+        Write a JavaScript function that generates all combinations of a string
+        <br>
+        <hr>
+        <script>
+            var string = prompt('Give a string');
+            function getCombinations(str) {
+                combinations = [];
+                for(i = 0; i < str.length; i++){
+                    for(j = i +1; j < str.length +1; j++){
+                        combinations.push(str.slice(i, j));
+                    }
+                }
+                return combinations;
+            }
+            document.write(getCombinations(string));
+        </script>
+    </body>
+</html>
